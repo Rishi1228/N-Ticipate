@@ -1,4 +1,4 @@
-"""PARSQL-Hinglish Lite — Flask entry point.
+"""N-Ticipate — Flask entry point.
 
 Run:  .venv\\Scripts\\python app.py   then open http://127.0.0.1:5000
 """

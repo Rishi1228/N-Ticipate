@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block title %}HMM POS Tagger · PARSQL-Hinglish
-Lite{% endblock %} {% block head %}
+{% extends "base.html" %} {% block title %}HMM POS Tagger · N-Ticipate{% endblock %} {% block head %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 {% endblock %} {% block content %}
 <header class="page-head">
@@ -37,16 +36,7 @@ Lite{% endblock %} {% block head %}
       <select id="pos-mix">
         {% for key, label in mixes.items() %}
         <option
-          value="{{ key }}"
-          {%
-          if
-          key=""
-          ="best_mix"
-          %}
-          selected{%
-          endif
-          %}
-        >
+          value="{{ key }}"{% if key == best_mix %} selected{% endif %}>
           {{ label }}
         </option>
         {% endfor %}

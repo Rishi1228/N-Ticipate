@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% block title %}PARSQL-Hinglish Lite{% endblock %}</title>
+    <title>{% block title %}N-Ticipate{% endblock %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
@@ -18,8 +18,8 @@
   <body>
     <aside class="sidebar">
       <a class="brand" href="{{ url_for('home') }}">
-        <span class="brand-mark">PQ</span>
-        <span class="brand-text">PARSQL<br /><small>Hinglish Lite</small></span>
+        <span class="brand-mark">NT</span>
+        <span class="brand-text">N-Ticipate<br /><small>Hinglish Text-to-SQL</small></span>
       </a>
       <nav>
         {% for item in nav %} {% set active = request.endpoint == item.endpoint

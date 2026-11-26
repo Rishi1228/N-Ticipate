@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block title %}N-gram Lab · PARSQL-Hinglish Lite{%
+{% extends "base.html" %} {% block title %}N-gram Lab · N-Ticipate{%
 endblock %} {% block head %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 {% endblock %} {% block content %}
@@ -18,16 +18,7 @@ endblock %} {% block head %}
     <select id="corpus">
       {% for key, label in corpora.items() %}
       <option
-        value="{{ key }}"
-        {%
-        if
-        key=""
-        ="questions-hg"
-        %}
-        selected{%
-        endif
-        %}
-      >
+        value="{{ key }}"{% if key == "questions-hg" %} selected{% endif %}>
         {{ label }}
       </option>
       {% endfor %}
@@ -47,16 +38,7 @@ endblock %} {% block head %}
     <select id="smoothing">
       {% for key, label in smoothings.items() %}
       <option
-        value="{{ key }}"
-        {%
-        if
-        key=""
-        ="kneser_ney"
-        %}
-        selected{%
-        endif
-        %}
-      >
+        value="{{ key }}"{% if key == "kneser_ney" %} selected{% endif %}>
         {{ label }}
       </option>
       {% endfor %}
