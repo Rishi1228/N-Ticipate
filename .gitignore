@@ -1,3 +1,23 @@
+# Python / tooling
 .venv/
+venv/
 __pycache__/
+*.py[cod]
 .pytest_cache/
+.ipynb_checkpoints/
+
+# Editors / OS / agent files
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# Coursework documents (not needed to run the project)
+*.docx
+*.doc
+~$*
+*.pdf
+RE_Tutorials/
+PLAN.md
+PROJECT.md

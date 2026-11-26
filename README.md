@@ -3,8 +3,7 @@
 Ask a college database questions in **English, हिंदी or Hinglish** and get SQL + the answer.
 A lab-scale version of _PARSQL: Enhancing Text-to-SQL through SQL Parsing and Reasoning_
 (Dai et al., ACL Findings 2025), extended to Hindi and code-mixed Hinglish with classical NLP:
-preprocessing, N-gram language models and HMM part-of-speech tagging. See `PLAN.md` for the plan
-and `NLP_EXP_1.pdf` for the problem statement.
+preprocessing, N-gram language models and HMM part-of-speech tagging.
 
 ```
 "computer dept me kitney studnts h?"

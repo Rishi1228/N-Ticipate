@@ -1,4 +1,4 @@
-# How to run YaarSQL on another PC
+# How to run N-Ticipate on another PC
 
 These steps were tested on a fresh clone of this repository (Windows 11, Python 3.14.4).
 After step 4 the site runs; nothing else needs to be downloaded, because the database,
@@ -20,11 +20,11 @@ Download Python from <https://www.python.org/downloads/>. On Windows, tick
 **1. Download the project**
 
 ```powershell
-git clone https://github.com/Rishi1228/YaarSQL.git
-cd YaarSQL
+git clone https://github.com/Rishi1228/N-Ticipate.git
+cd N-Ticipate
 ```
 
-If you have an SSH key set up on GitHub you can use `git clone git@github.com:Rishi1228/YaarSQL.git` instead.
+If you have an SSH key set up on GitHub you can use `git clone git@github.com:Rishi1228/N-Ticipate.git` instead.
 Without Git, use **Code → Download ZIP** on the GitHub page, unzip it, and open a terminal in that folder.
 
 **2. Create a virtual environment**
@@ -71,8 +71,8 @@ The same steps, with `.venv/bin/python` instead of `.venv\Scripts\python`
 (use `python3` if `python` is not found):
 
 ```bash
-git clone https://github.com/Rishi1228/YaarSQL.git
-cd YaarSQL
+git clone https://github.com/Rishi1228/N-Ticipate.git
+cd N-Ticipate
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python app.py                  # open http://127.0.0.1:5000
